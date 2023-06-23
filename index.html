@@ -1,11 +1,149 @@
-,
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
     <title>My Blog</title>
   </head>
-  <body>
-    <h1>Kia ora Taiao! (Hello World!)</h1>
-    <p>This is the beginning of my website home page.</p>
-    <p>It will eventually contain a list of links to all of my blogs.</p>
+
+  <style>
+    h1 {
+      font-size: 80px;
+      margin-top: 15px;
+    }
+  </style>
+
+  <body style="background-color: #daae94">
+    <div style="text-align: center">
+      <h1>Kia ora Taiao!</h1>
+    </div>
+    <div style="text-align: center">
+      <button
+        type="button"
+        class="btn btn-info"
+        id="myButton"
+        data-toggle="collapse"
+        data-target="#demo"
+      >
+        (Hello World)
+      </button>
+      <style>
+        #myButton {
+          background-color: #94c0da;
+        }
+      </style>
+    </div>
+
+    <div id="demo" class="collapse" style="text-align: center">
+      This is the beginning of my website home page. It will eventually contain
+      a list of links to all of my blogs.
+    </div>
+
+    <div
+      class="card"
+      style="width: 18rem; position: absolute; top: 200px; left: 100px"
+    >
+      <img
+        src="https://i.pinimg.com/564x/a7/65/ba/a765ba691b66f08077911e487d7eff53.jpg"
+        class="card-img-top"
+      />
+      <div class="card-body" style="background-color: #94c0da">
+        <h5 class="card-title">Te Houtaewa</h5>
+        <p class="card-text">
+          E kore e mau i a koe, he wae kai pakiaka. A foot accustomed to running
+          over roots makes the speediest runner...
+        </p>
+        <a
+          href="file://wsl.localhost/Ubuntu/home/queencyl_rabang/devacademy/ecyl-rabang.github.io/ecyl-rabang.github.io/blog/te-houtaewa-template.html"
+          class="btn btn-primary"
+          >Read More</a
+        >
+      </div>
+    </div>
+
+    <div
+      class="card"
+      style="width: 18rem; position: absolute; top: 200px; left: 455px"
+      id="My-Technical-Blog"
+    >
+      <img
+        src="data:image/jpeg;base64,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"
+        class="card-img-top"
+      />
+      <div class="card-body">
+        <h5 class="card-title">My Technical Blog</h5>
+        <p class="card-text">
+          What is the difference between margin, border and padding?
+        </p>
+        <a
+          href="file://wsl.localhost/Ubuntu/home/queencyl_rabang/devacademy/ecyl-rabang.github.io/ecyl-rabang.github.io/blog/html-css.html"
+          class="btn btn-primary"
+          >Read More</a
+        >
+      </div>
+    </div>
+    <div
+      class="card"
+      style="width: 18rem; position: absolute; top: 200px; left: 800px"
+    >
+      <img src="" class="card-img-top" />
+      <div class="card-body">
+        <h5 class="card-title">Identity and Values</h5>
+        <p class="card-text">
+          Get to know my values and what has influenced me
+        </p>
+        <a
+          href="file://wsl.localhost/Ubuntu/home/queencyl_rabang/devacademy/ecyl-rabang.github.io/ecyl-rabang.github.io/blog/identity-values.html"
+          class="btn btn-primary"
+          >Read More</a
+        >
+      </div>
+    </div>
+    <div
+      class="card"
+      style="width: 18rem; position: absolute; top: 800px; left: 100px"
+    >
+      <img src="..." class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Learning Plan</h5>
+        <p class="card-text">My Learning Plan</p>
+        <a
+          href="file://wsl.localhost/Ubuntu/home/queencyl_rabang/devacademy/ecyl-rabang.github.io/ecyl-rabang.github.io/blog/learning-plan.html"
+          class="btn btn-primary"
+          >Read More</a
+        >
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </body>
-</html> 
+</html>
